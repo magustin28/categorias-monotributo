@@ -1,0 +1,43 @@
+/* reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+/* ESTILOS GENERALES */
+/* estilos body */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #F5F5DC;
+}
+
+/* estilos body-grid */
+.body-grid {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+/* estilos header */
+header {
+    grid-area: header;
+}
+
+/* estilos main */
+main {
+    grid-area: main;
+}
+
+/* estilos footer */
+.footer {
+    grid-area: footer;
+    padding: 1.5rem;
+    text-align: center;
+    font-style: italic;
+}
